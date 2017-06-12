@@ -6,10 +6,6 @@ var allItems = document.querySelectorAll('.item');
 for (i = 0; i < allItems.length; i ++) {
   allItems[i].addEventListener('click', function(event){
     var selectedButton = event.currentTarget.value;
-    if (selectedButton === "sqrt") {
-      selectedInputs = Math.sqrt(selectedInputs);
-    }
-
     if (selectedButton === "=") {
       selectedInputs = eval(selectedInputs);
       screenValue.value = selectedInputs;
